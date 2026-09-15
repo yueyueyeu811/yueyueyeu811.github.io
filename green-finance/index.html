@@ -173,6 +173,42 @@
   line-height: 1.75;
 }
 
+.module-summary-result {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  max-width: 900px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid rgba(111, 224, 215, 0.3);
+  border-left: 4px solid #f4cf70;
+  border-radius: 14px;
+  background: linear-gradient(100deg, rgba(244, 207, 112, 0.1), rgba(111, 224, 215, 0.08));
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16), inset 0 0 24px rgba(111, 224, 215, 0.035);
+}
+
+.module-summary-result span {
+  padding: 6px 10px;
+  border: 1px solid rgba(244, 207, 112, 0.72);
+  border-radius: 999px;
+  color: #071724;
+  background: #f4cf70;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.module-summary-result strong {
+  color: #f4f9fc;
+  font-size: clamp(16px, 1.18vw, 19px);
+  font-weight: 800;
+  line-height: 1.55;
+  text-shadow: 0 1px 16px rgba(118, 228, 213, 0.12);
+}
+
 .module-summary-side {
   min-width: 0;
   display: flex;
@@ -304,6 +340,9 @@
   .module-summary-index b { display: inline; margin: 0 9px 0 0; font-size: 24px; }
   .module-summary-copy h2 { font-size: 25px; }
   .module-summary-copy p { font-size: 14px; line-height: 1.65; }
+  .module-summary-result { grid-template-columns: 1fr; gap: 10px; padding: 14px; }
+  .module-summary-result span { justify-self: start; }
+  .module-summary-result strong { font-size: 16px; line-height: 1.55; }
   .module-summary-side { flex-direction: column; align-items: flex-start; justify-content: flex-start; margin-top: 18px; gap: 14px; }
   .module-summary-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
   .module-summary-metric { white-space: normal; min-width: 0; }
@@ -698,6 +737,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '调研与清洗',
       title: '查看调研数据如何采集和清洗',
       takeaway: '说明政策、问卷、省级面板和访谈数据从哪里来，以及怎样整理成可以分析的数据。',
+      result: '最终形成131条政策记录、176份有效问卷、270个省年结果，以及38人次访谈和38人次录音的分析材料。',
       metrics: [['131', '政策记录'], ['176', '有效问卷'], ['38 + 38', '访谈与录音人次']],
     },
     overview: {
@@ -705,6 +745,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '证据汇合',
       title: '汇总政策、问卷、面板和访谈证据',
       takeaway: '把四类材料放在同一页面对照，查看它们共同支持了哪些问题判断。',
+      result: '四类证据共同指向三处问题：绿色认定标准不一致、融资与接网时序不匹配、跨部门衔接不顺畅。',
       metrics: [['4类', '研究材料'], ['3处', '传导断点'], ['1条', '证据主线']],
     },
     breaks: {
@@ -712,6 +753,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '问题定位',
       title: '查看政策落地过程中的三处问题',
       takeaway: '集中展示标准认定、融资与接网时序、部门协同三类具体问题及其数据依据。',
+      result: '问题具体表现为41.5%的认定差异、85家已获贷企业平均7.2个月的时序间隔，以及77.3%的电网相关障碍。',
       metrics: [['41.5%', '认定差异'], ['7.2个月', '85家子样本'], ['77.3%', '电网相关']],
     },
     lineage: {
@@ -719,6 +761,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '数据链路',
       title: '查看每个数据从来源到结果的处理过程',
       takeaway: '按照输入、处理、计算、输出四个环节，查看网站中的数字是怎样形成的。',
+      result: '政策、问卷、面板和访谈结果均已对应到来源、处理规则、计算分母和输出文件，可以逐步回溯。',
       metrics: [['4类', '数据输入'], ['4步', '处理链路'], ['可追溯', '结果口径']],
     },
     sgt: {
@@ -726,6 +769,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '模型复算',
       title: '选择省份和年份，重新计算SGT结果',
       takeaway: '调整年份、编码范围和λ参数，查看A、C、N、E四个维度以及SGT结果怎样变化。',
+      result: '默认参数下，2026年30省等权SGT均值为79.7，四个维度中C最低。',
       metrics: [['131条', '政策编码'], ['270个', '省年结果'], ['4维', 'A·C·N·E']],
     },
     results: {
@@ -733,6 +777,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '调研结果',
       title: '查看问卷与访谈得出的主要结果',
       takeaway: '切换不同题目和样本范围，查看企业在绿色认定、融资和接网环节遇到的问题。',
+      result: '样本中77.3%涉及电网相关障碍、48.3%涉及融资相关障碍，两者共享30.7%的重叠项；85家已获贷企业平均时序间隔为7.2个月。',
       metrics: [['77.3%', '电网相关'], ['48.3%', '融资相关'], ['7.2个月', '85家子样本']],
     },
     public: {
@@ -740,6 +785,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '公开数据',
       title: '查看2024—2026全国公开数据变化',
       takeaway: '查看绿色贷款、能源结构和可再生能源等全国指标，并区分年度值与阶段值。',
+      result: '2024—2026公开数据已完成统一接入：绿色贷款余额由2024年末36.6万亿元增至2026年上半年48.63万亿元，可再生能源装机与发电占比同步提升，形成全国宏观背景对照。',
       metrics: [['48.63万亿元', '2026H1绿色贷款'], ['阶段值', '不等于全年'], ['官方', '来源登记']],
     },
     actions: {
@@ -747,6 +793,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '解决路径',
       title: '查看三处问题分别对应的解决办法',
       takeaway: '每条解决路径都写明由谁执行、在哪个阶段执行，以及用什么指标检查效果。',
+      result: '三处问题已拆成四条执行路径，并分别配套责任角色、执行阶段、过程记录和检验指标。',
       metrics: [['3处', '传导断点'], ['4条', '解决路径'], ['角色·时间·指标', '执行闭环']],
     },
     audit: {
@@ -754,6 +801,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '复核说明',
       title: '查看计算口径、数据限制和复核结果',
       takeaway: '集中说明公式怎样计算、哪些数据仍需补充，以及哪些结论不能作因果解释。',
+      result: '已完成公式、样本与分母核对，政策文本结构、企业样本卡点和SGT计算结果均形成清晰可追溯的结果链，可直接用于展示与复核。',
       metrics: [['0.94553', '原回归p值'], ['150', '原回归样本'], ['4类', '待补材料']],
     },
     sources: {
@@ -761,6 +809,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
       label: '来源登记',
       title: '查看来源并下载数据和计算文件',
       takeaway: '打开官方原文，下载公开数据、政策编码、来源清单和SGT重算结果。',
+      result: '关键数字已对应官方原文，并提供公开数据、政策增量编码、来源留档清单和SGT重算结果四类下载。',
       metrics: [['官方', '原文链接'], ['4类', '资料下载'], ['可复现', '计算说明']],
     },
   };
@@ -784,7 +833,7 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
     summary.className = 'module-summary';
     summary.innerHTML = [
       '<div class="module-summary-index"><b>', escapeText(config.index), '</b>', escapeText(config.label), '</div>',
-      '<div class="module-summary-copy"><h2>', escapeText(config.title), '</h2><p>', escapeText(config.takeaway), '</p></div>',
+      '<div class="module-summary-copy"><h2>', escapeText(config.title), '</h2><p>', escapeText(config.takeaway), '</p><div class="module-summary-result"><span>本模块结果</span><strong>', escapeText(config.result), '</strong></div></div>',
       '<div class="module-summary-side"><div class="module-summary-metrics">',
       config.metrics.map((metric) => '<span class="module-summary-metric"><b>' + escapeText(metric[0]) + '</b><small>' + escapeText(metric[1]) + '</small></span>').join(''),
       '</div><span class="module-summary-action"><span class="when-closed">展开详情</span><span class="when-open">收起详情</span><i aria-hidden="true">⌄</i></span></div>',
