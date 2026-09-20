@@ -52,6 +52,7 @@
   @media(max-width:760px){.fullscreen-btn{min-width:42px;padding:8px}.fullscreen-btn #fullscreenLabel{display:none}.gate-fullscreen{right:91px;top:8px;padding:8px 10px}.gate-fullscreen-label{display:none}.cursor-glow{display:none}.coding-scale{grid-template-columns:1fr 1fr}.matrix-grid{grid-auto-rows:15px}.matrix-y{grid-template-rows:repeat(30,15px)}.chart-card{min-height:auto}.sim-top{display:block}.role-switch{margin-top:10px}.funnel-card{grid-template-columns:72px minmax(0,1fr);gap:10px;padding:12px}.funnel-card strong{font-size:28px}.funnel-card span{font-size:12px}.funnel-delta{padding-left:24px}.gate-heading{top:3vh}.gate-heading p{display:none}.gate-frame{top:53%;width:88vw;height:52vh}.gate-console{grid-template-columns:1fr;bottom:2.5vh;text-align:center}.gate-status{display:none}.gate-open{width:100%}.door strong{font-size:23px}.door small{letter-spacing:.12em}.gate-seal{width:104px;height:104px}.seal-core{width:64px;height:64px}.video-bezel{width:96%}.video-actions{bottom:10px;width:90%;justify-content:center}.gate-skip{right:10px;top:8px}}
   @media(max-width:760px){.model-workspace{grid-template-columns:1fr;grid-template-areas:"lambda" "radar" "score" "gap" "nline" "sensitivity"}}
   .intro-video-host,.intro-video-host video{width:100%;height:100%}.intro-video-host{position:relative}.intro-video-host video{display:block;object-fit:contain;background:#02070c}.video-placeholder[hidden],.video-play-prompt[hidden]{display:none!important}.video-play-prompt{position:absolute;left:50%;top:50%;z-index:6;transform:translate(-50%,-50%);border:1px solid rgba(114,235,219,.7);border-radius:999px;padding:14px 22px;background:rgba(4,24,37,.9);color:#f4fbff;font-weight:900;box-shadow:0 0 34px rgba(85,234,215,.28);cursor:pointer}.video-play-prompt:hover,.video-play-prompt:focus-visible{background:#70e0d1;color:#04161f;outline:2px solid #f4c96b;outline-offset:3px}.video-chamber{grid-template-rows:minmax(0,1fr) auto;gap:18px}.video-bezel{align-self:end;width:min(78%,780px);max-height:calc(100% - 4px)}.video-actions{position:static;transform:none}.door-left .door-index,.door-left strong,.door-left small{transform:translateX(-13%)}.door-right .door-index,.door-right strong,.door-right small{transform:translateX(13%)}
+  body.gate-video-playing .gate-intro::before,body.gate-video-playing .gate-aurora,body.gate-video-playing .gate-stars,body.gate-video-playing .gate-flash{display:none!important}body.gate-video-playing .gate-intro *,body.gate-video-playing .gate-intro *::before,body.gate-video-playing .gate-intro *::after{animation-play-state:paused!important}body.gate-video-playing .gate-frame{transform:translate(-50%,-50%)!important;transition:none;box-shadow:0 0 0 8px rgba(8,35,55,.82),0 18px 44px rgba(0,0,0,.44)}body.gate-video-playing .video-bezel{box-shadow:0 0 0 7px rgba(11,47,68,.72)}body.gate-video-playing .gate-console{backdrop-filter:none}body.gate-video-playing #cursorGlow{display:none}
   .evidence-proof{margin-top:16px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(12,39,62,.94),rgba(4,18,31,.94));padding:18px;min-height:190px;box-shadow:var(--shadow)}.proof-head{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:13px}.proof-head span{color:var(--cyan);font-size:13px}.proof-head b{font-size:14px;text-align:right}.proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.proof-grid>div{padding:13px;border-radius:13px;background:rgba(101,169,255,.07);border:1px solid rgba(101,169,255,.16);min-height:92px}.proof-grid strong{display:block;color:var(--gold);font-size:20px;margin-bottom:7px}.proof-grid span{display:block;color:var(--muted);font-size:12px}.proof-clips{display:grid;gap:7px;margin-top:12px}.proof-clips span{padding:9px 11px;border-radius:10px;background:rgba(101,169,255,.07);color:#c8dce7;font-size:12px}.proof-clips b{color:var(--cyan);margin-right:9px}.audio-clips{grid-template-columns:repeat(3,1fr)}.wave-mini{height:44px;display:flex;gap:4px;align-items:center;margin:12px 0 0}.wave-mini i{display:block;flex:1;height:var(--h);border-radius:99px;background:linear-gradient(var(--cyan),var(--blue));animation:wavePulse 1.15s ease-in-out infinite alternate}.wave-mini i:nth-child(3n){animation-delay:-.35s}.wave-mini i:nth-child(4n){animation-delay:-.7s}@keyframes wavePulse{from{transform:scaleY(.28);opacity:.38}to{transform:scaleY(1);opacity:1}}
   .sample-funnel{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:9px;align-items:stretch;margin-top:14px}.sample-funnel>div{padding:13px;border-radius:13px;border:1px solid var(--line);background:rgba(101,169,255,.07)}.sample-funnel b,.sample-funnel strong{display:block;font-size:28px;color:var(--gold)}.sample-funnel small{display:block;color:var(--muted)}.sample-funnel i{display:grid;place-items:center;color:var(--cyan);font-style:normal;font-size:14px;text-align:center}.sample-funnel i small{font-size:10px}.policy-funnel{margin-bottom:14px}.sample-subtract{color:#ffb578!important}
   .policy-funnel-vertical{display:grid;gap:8px;margin-top:14px}.funnel-card{display:grid;grid-template-columns:90px minmax(0,1fr);gap:14px;align-items:center;padding:13px 15px;border:1px solid var(--line);border-radius:13px;background:rgba(101,169,255,.07)}.funnel-card strong{font-size:34px;line-height:1;color:var(--gold)}.funnel-card span{min-width:0;color:#c9dce6;font-size:14px;line-height:1.55}.funnel-delta{display:flex;gap:10px;align-items:center;padding-left:34px;color:var(--cyan)}.funnel-delta i{font-style:normal;font-size:18px}.funnel-delta b{font-size:12px;line-height:1.45}
@@ -97,6 +98,65 @@
 .module-drawer[open] {
   border-color: rgba(111, 224, 215, 0.5);
   box-shadow: 0 30px 78px rgba(0, 0, 0, 0.34), 0 0 0 1px rgba(111, 224, 215, 0.08);
+}
+
+.module-drawer.presenter-current {
+  border-color: rgba(244, 207, 112, 0.78);
+  box-shadow: 0 30px 78px rgba(0, 0, 0, 0.34), 0 0 0 2px rgba(244, 207, 112, 0.2), 0 0 48px rgba(111, 224, 215, 0.1);
+}
+
+.presenter-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 116px;
+  white-space: nowrap;
+  border-color: rgba(244, 207, 112, 0.42);
+}
+
+.presenter-btn[aria-pressed="true"] {
+  color: #071724;
+  border-color: transparent;
+  background: linear-gradient(135deg, #f4cf70, #73dfd3);
+  font-weight: 900;
+}
+
+.presenter-hud {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  display: grid;
+  gap: 4px;
+  max-width: min(620px, calc(100vw - 32px));
+  padding: 13px 17px;
+  border: 1px solid rgba(244, 207, 112, 0.5);
+  border-radius: 14px;
+  background: rgba(3, 15, 25, 0.94);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.42);
+  color: #dff6f3;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(18px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  backdrop-filter: blur(14px);
+}
+
+.presenter-hud.show {
+  opacity: 1;
+  transform: none;
+}
+
+.presenter-hud b {
+  color: #f4cf70;
+  font-size: 15px;
+}
+
+.presenter-hud span {
+  color: #aac5cf;
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .module-summary {
@@ -338,6 +398,9 @@
 }
 
 @media (max-width: 700px) {
+  .presenter-btn { min-width: 42px; padding: 8px; }
+  .presenter-btn span:last-child { display: none; }
+  .presenter-hud { right: 16px; bottom: 16px; }
   .module-shell-section { padding: 10px 0 !important; }
   .module-summary { display: block; min-height: 0; padding: 22px 20px; }
   .module-summary-index { display: block; border-right: 0; border-bottom: 1px solid rgba(111, 224, 215, 0.16); padding-bottom: 13px; margin-bottom: 16px; }
@@ -356,6 +419,7 @@
 }
 
 @media print {
+  .presenter-hud, .presenter-btn { display: none !important; }
   .module-shell-section { break-inside: auto; }
   .module-summary { min-height: 0; padding: 14px; border-bottom: 1px solid #999; }
   .module-summary-action { display: none; }
@@ -450,7 +514,7 @@
 @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 @media print{body{background:white;color:black}.top,.no-print,.cursor-glow{display:none}section{break-inside:auto;padding:20px 0}.wrap{width:100%}.panel,.chart-panel,.chart-card,details{background:white;color:black;box-shadow:none;border:1px solid #aaa}.section-head h2,h1,p,td,th,.mini,.micro{color:black!important}.scroll-table{max-height:none}.source-entry a{color:#222}}
 a.btn{text-decoration:none}.hero h1{line-height:1.25;letter-spacing:-.025em}@media(max-width:700px){.hero h1{font-size:31px;line-height:1.35;letter-spacing:0}.hero h1 em{display:block}nav{width:100%}}
-</style><link href="https://tcsdk.com/player/tcplayer/release/v5.3.4/tcplayer.min.css" rel="stylesheet"><script src="https://tcsdk.com/player/tcplayer/release/v5.3.4/tcplayer.v5.3.4.min.js"></script><style>.source-card b[data-final-label]{font-size:24px;line-height:1.3;letter-spacing:0;max-width:240px}.intro-video-host .video-js,.intro-video-host video{width:100%;height:100%;object-fit:contain}.intro-video-host .video-js{background:#06111d}</style></head><body class="gate-locked"><div class="gate-intro" id="gateIntro" role="dialog" aria-modal="true" aria-labelledby="gateTitle"><div class="gate-aurora"></div><div class="gate-stars" aria-hidden="true"><i style="--i:0;--x:0%;--y:0%"></i><i style="--i:1;--x:37%;--y:61%"></i><i style="--i:2;--x:74%;--y:31%"></i><i style="--i:3;--x:14%;--y:1%"></i><i style="--i:4;--x:51%;--y:62%"></i><i style="--i:5;--x:88%;--y:32%"></i><i style="--i:6;--x:28%;--y:2%"></i><i style="--i:7;--x:65%;--y:63%"></i><i style="--i:8;--x:5%;--y:33%"></i><i style="--i:9;--x:42%;--y:3%"></i><i style="--i:10;--x:79%;--y:64%"></i><i style="--i:11;--x:19%;--y:34%"></i><i style="--i:12;--x:56%;--y:4%"></i><i style="--i:13;--x:93%;--y:65%"></i><i style="--i:14;--x:33%;--y:35%"></i><i style="--i:15;--x:70%;--y:5%"></i><i style="--i:16;--x:10%;--y:66%"></i><i style="--i:17;--x:47%;--y:36%"></i></div><button class="gate-fullscreen" id="gateFullscreenBtn" type="button" data-fullscreen-control aria-pressed="false" title="全屏展示"><span aria-hidden="true">⛶</span><span class="gate-fullscreen-label" data-fullscreen-label>全屏展示</span></button><button class="gate-skip" id="skipGate">直接进入</button><div class="gate-heading"><div class="kicker">CHALLENGE CUP · FINANCIAL RESEARCH TRACK</div><h1 id="gateTitle">开启绿色金融<br><em>政策传导之门</em></h1><p>从政策文本、企业问卷、省级面板与访谈材料出发，进入绿色金融政策传导诊断现场。</p></div><div class="gate-frame" id="gateFrame"><div class="video-chamber" id="videoChamber"><div class="video-bezel"><div class="intro-video-host" id="introVideoHost" data-src="media/green-finance-interview-720p.mp4" data-tencent-direct-src="https://1488954037.vod-qcloud.com/d756a6f3vodcq1488954037/5e9258d55001834819972956775/ypMg1kwsWkIA.mp4" data-tencent-file-id="5001834819972956775" data-tencent-app-id="1488954037" data-tencent-psign="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6MTQ4ODk1NDAzNywiZmlsZUlkIjoiNTAwMTgzNDgxOTk3Mjk1Njc3NSIsImN1cnJlbnRUaW1lU3RhbXAiOjE3ODk0ODcyOTgsImNvbnRlbnRJbmZvIjp7ImF1ZGlvVmlkZW9UeXBlIjoiT3JpZ2luYWwiLCJpbWFnZVNwcml0ZURlZmluaXRpb24iOjEwfSwidXJsQWNjZXNzSW5mbyI6eyJkb21haW4iOiIxNDg4OTU0MDM3LnZvZC1xY2xvdWQuY29tIiwic2NoZW1lIjoiSFRUUFMifX0.TomFDeXt1mQHqZcANnm-_23arG3rxrTgd_uzqEgcpIw"></div><div class="video-placeholder" id="videoPlaceholder"><span class="video-orbit"></span><b>调研视频加载中</b><small>门体开启后呈现完整影像</small></div></div><div class="video-actions"><button class="gate-button primary" id="enterSite">进入调研系统</button><button class="gate-button" id="replayGate">重新开启</button></div></div><div class="door door-left"><div class="door-grid"></div><span class="door-index">POLICY</span><strong>政策供给</strong><small>标准 · 工具 · 部门</small><i class="door-trace"></i></div><div class="door door-right"><div class="door-grid"></div><span class="door-index">PROJECT</span><strong>项目落地</strong><small>融资 · 接网 · 执行</small><i class="door-trace"></i></div><div class="gate-seal" aria-hidden="true"><span class="seal-ring"></span><span class="seal-core">融</span></div><div class="gate-flash"></div></div><div class="gate-console"><div class="gate-status"><span class="status-dot"></span><b id="gateStatus">传导系统待启动</b><small id="gateSubstatus">四类研究材料与调研影像已就绪</small></div><button class="gate-button primary gate-open" id="openGate"><span>开启调研之门</span><i>→</i></button></div></div><div class="scroll-progress" id="scrollProgress"></div><div class="cursor-glow" id="cursorGlow"></div>
+</style><link rel="preconnect" href="https://1488954037.vod-qcloud.com" crossorigin><link rel="dns-prefetch" href="//1488954037.vod-qcloud.com"><style>.source-card b[data-final-label]{font-size:24px;line-height:1.3;letter-spacing:0;max-width:240px}.intro-video-host video{width:100%;height:100%;object-fit:contain}</style></head><body class="gate-locked"><div class="gate-intro" id="gateIntro" role="dialog" aria-modal="true" aria-labelledby="gateTitle"><div class="gate-aurora"></div><div class="gate-stars" aria-hidden="true"><i style="--i:0;--x:0%;--y:0%"></i><i style="--i:1;--x:37%;--y:61%"></i><i style="--i:2;--x:74%;--y:31%"></i><i style="--i:3;--x:14%;--y:1%"></i><i style="--i:4;--x:51%;--y:62%"></i><i style="--i:5;--x:88%;--y:32%"></i><i style="--i:6;--x:28%;--y:2%"></i><i style="--i:7;--x:65%;--y:63%"></i><i style="--i:8;--x:5%;--y:33%"></i><i style="--i:9;--x:42%;--y:3%"></i><i style="--i:10;--x:79%;--y:64%"></i><i style="--i:11;--x:19%;--y:34%"></i><i style="--i:12;--x:56%;--y:4%"></i><i style="--i:13;--x:93%;--y:65%"></i><i style="--i:14;--x:33%;--y:35%"></i><i style="--i:15;--x:70%;--y:5%"></i><i style="--i:16;--x:10%;--y:66%"></i><i style="--i:17;--x:47%;--y:36%"></i></div><button class="gate-fullscreen" id="gateFullscreenBtn" type="button" data-fullscreen-control aria-pressed="false" title="全屏展示"><span aria-hidden="true">⛶</span><span class="gate-fullscreen-label" data-fullscreen-label>全屏展示</span></button><button class="gate-skip" id="skipGate">直接进入</button><div class="gate-heading"><div class="kicker">CHALLENGE CUP · FINANCIAL RESEARCH TRACK</div><h1 id="gateTitle">开启绿色金融<br><em>政策传导之门</em></h1><p>从政策文本、企业问卷、省级面板与访谈材料出发，进入绿色金融政策传导诊断现场。</p></div><div class="gate-frame" id="gateFrame"><div class="video-chamber" id="videoChamber"><div class="video-bezel"><div class="intro-video-host" id="introVideoHost" data-src="media/green-finance-interview-720p.mp4" data-tencent-direct-src="https://1488954037.vod-qcloud.com/d756a6f3vodcq1488954037/5e9258d55001834819972956775/ypMg1kwsWkIA.mp4" data-tencent-file-id="5001834819972956775" data-tencent-app-id="1488954037" data-tencent-psign="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6MTQ4ODk1NDAzNywiZmlsZUlkIjoiNTAwMTgzNDgxOTk3Mjk1Njc3NSIsImN1cnJlbnRUaW1lU3RhbXAiOjE3ODk0ODcyOTgsImNvbnRlbnRJbmZvIjp7ImF1ZGlvVmlkZW9UeXBlIjoiT3JpZ2luYWwiLCJpbWFnZVNwcml0ZURlZmluaXRpb24iOjEwfSwidXJsQWNjZXNzSW5mbyI6eyJkb21haW4iOiIxNDg4OTU0MDM3LnZvZC1xY2xvdWQuY29tIiwic2NoZW1lIjoiSFRUUFMifX0.TomFDeXt1mQHqZcANnm-_23arG3rxrTgd_uzqEgcpIw"></div><div class="video-placeholder" id="videoPlaceholder"><span class="video-orbit"></span><b>调研视频加载中</b><small>门体开启后呈现完整影像</small></div></div><div class="video-actions"><button class="gate-button primary" id="enterSite">进入调研系统</button><button class="gate-button" id="replayGate">重新开启</button></div></div><div class="door door-left"><div class="door-grid"></div><span class="door-index">POLICY</span><strong>政策供给</strong><small>标准 · 工具 · 部门</small><i class="door-trace"></i></div><div class="door door-right"><div class="door-grid"></div><span class="door-index">PROJECT</span><strong>项目落地</strong><small>融资 · 接网 · 执行</small><i class="door-trace"></i></div><div class="gate-seal" aria-hidden="true"><span class="seal-ring"></span><span class="seal-core">融</span></div><div class="gate-flash"></div></div><div class="gate-console"><div class="gate-status"><span class="status-dot"></span><b id="gateStatus">传导系统待启动</b><small id="gateSubstatus">四类研究材料与调研影像已就绪</small></div><button class="gate-button primary gate-open" id="openGate"><span>开启调研之门</span><i>→</i></button></div></div><div class="scroll-progress" id="scrollProgress"></div><div class="cursor-glow" id="cursorGlow"></div>
 <header class="top"><div class="wrap top-in"><div class="brand"><div class="brand-mark">融</div><span>绿色金融传导诊断</span></div><nav aria-label="章节"><a href="#research">调研过程</a><a href="#overview">证据汇合</a><a href="#breaks">问题定位</a><a href="#lineage">数据链路</a><a href="#sgt">PSS与SGT</a><a href="#results">调研结果</a><a href="#public">公开数据</a><a href="#actions">解决路径</a><a href="#audit">复核说明</a></nav><button class="btn no-print fullscreen-btn" id="fullscreenBtn" type="button" data-fullscreen-control aria-pressed="false" title="全屏展示"><span class="fullscreen-icon" aria-hidden="true">⛶</span><span id="fullscreenLabel" data-fullscreen-label>全屏展示</span></button><button class="btn no-print" id="printBtn">打印</button></div></header>
 <main>
 <section id="research" class="research-origins"><div class="wrap"><div class="section-head research-head"><div><div class="kicker">00 / RESEARCH & DATA PROCESSING</div><h2>调研数据怎样形成<br><span class="accent">从采集、清洗到有效数据</span></h2></div><p>这里先回答“数据从哪里来、怎样整理、哪些清洗已经完成、最后进入哪一项分析”。先选一类材料，再点击五个步骤，逐步核对输入、处理规则、产物与证据边界。</p></div><div class="research-shell"><aside class="research-source-rail" id="researchSources" aria-label="选择调研材料"><button class="research-source active" data-research-source="policy"><i>政</i><span><b>政策文本</b><small>原始编码与官方增量</small></span><strong>131条记录，含2024—2026官方增量</strong></button><button class="research-source" data-research-source="survey"><i>企</i><span><b>企业问卷</b><small>题型、分母与有效样本</small></span><strong>213 → 176</strong></button><button class="research-source" data-research-source="panel"><i>省</i><span><b>省级面板</b><small>省份、年份与指标口径</small></span><strong>30 × 9</strong></button><button class="research-source" data-research-source="interview"><i>访</i><span><b>访谈材料</b><small>对象、录音与流程节点</small></span><strong>38人次访谈 + 38人次录音</strong></button></aside><div class="research-process"><div class="research-process-head"><div><span>点击步骤查看当前材料怎样变化</span><b id="researchProgress">政策文本 · 第1/5步</b></div><span class="research-manual">手动核验 · 不自动跳步</span></div><div class="research-steps" id="researchSteps" role="tablist" aria-label="数据处理步骤"><button class="research-step active" data-research-step="0"><small>01</small><b>采集登记</b></button><button class="research-step" data-research-step="1"><small>02</small><b>结构化整理</b></button><button class="research-step" data-research-step="2"><small>03</small><b>清洗与核对</b></button><button class="research-step" data-research-step="3"><small>04</small><b>形成有效数据</b></button><button class="research-step" data-research-step="4"><small>05</small><b>进入分析</b></button></div><article class="research-stage" id="researchStage" aria-live="polite"></article></div></div><div class="cleaning-verdict"><div class="cleaning-list"><div><b>政策</b><span>字段统一、同名标题识别、三年窗口构造</span></div><div><b>问卷</b><span>题型、分母、子样本与重叠关系核对</span></div><div><b>面板</b><span>省份—年份主键、单位、缺失与推断标记</span></div><div><b>访谈</b><span>原文件保留、对象台账与办理节点切片</span></div></div></div></div></section><section class="hero" id="overview"><div class="wrap"><div class="hero-copy"><div class="kicker">CHALLENGE CUP · GREEN FINANCE TRANSMISSION LAB</div><h1>四类材料汇合后<br><em>三处传导断点浮现</em></h1><p>政策供给在增长，但项目仍可能卡在标准翻译、融资与接网时序、跨部门衔接。点击四类材料，查看各自回答什么问题；播放汇合动画，观察它们如何共同把问题定位到传导中段。</p><div class="show-controls"><button class="btn primary" id="playEvidence">▶ 播放证据汇合</button><button class="btn" id="resetEvidence">重置</button><a class="btn" href="#lineage">逐步追溯数据 →</a></div></div><div class="evidence-engine" id="evidenceEngine"><div class="grid-bg"></div><button class="source-card left" data-evidence="0"><b data-count="131">0</b><strong>政策编码</strong><small>131条记录，含2024—2026官方增量</small><span class="signal"></span></button><button class="source-card right" data-evidence="1"><b data-count="270">0</b><strong>省年观察</strong><small>30省 × 9年 · 同公式计算</small><span class="signal"></span></button><button class="source-card left" data-evidence="2"><b data-count="176">0</b><strong>企业问卷</strong><small>213份发放 · 176份有效</small><span class="signal"></span></button><button class="source-card right" data-evidence="3"><b data-count="38" data-final-label="38人次访谈 + 38人次录音">0</b><strong>访谈与录音</strong><small>对象、录音与流程节点</small><span class="signal"></span></button><svg class="beam-svg" viewBox="0 0 1200 580" preserveAspectRatio="none" aria-hidden="true"><path class="beam" data-beam="0" d="M225 105 C405 105 430 250 600 286"/><path class="beam" data-beam="1" d="M975 105 C795 105 770 250 600 286"/><path class="beam" data-beam="2" d="M225 475 C405 475 430 330 600 286"/><path class="beam" data-beam="3" d="M975 475 C795 475 770 330 600 286"/></svg><div class="impact-flash"></div><div class="engine-core"><div class="core-inner"><small>交叉定位</small><b><span id="coreCount">0</span> 处断点</b><span>同一问题的不同切面</span></div></div><div class="fault-orbit"><span class="fault-chip">标准翻译</span><span class="fault-chip">融资—接网时序</span><span class="fault-chip">部门连接</span></div><div class="live-caption" id="evidenceCaption"><b>点击任一材料</b>，查看材料记录、处理过程和它进入判断的位置。</div></div><div class="evidence-proof" id="evidenceProof" aria-live="polite" hidden></div></div></section>
@@ -525,14 +589,16 @@ $('coverage').innerHTML=Engine.panel(DATA).filter(r=>r.year===2026).map(r=>`<div
   const gate=q('#gateIntro'),gateFrame=q('#gateFrame'),gateVideoHost=q('#introVideoHost'),gatePlaceholder=q('#videoPlaceholder');let gateVideo=null,gatePlayer=null,gateVideoPrompt=null,gateOpened=false,gateFallbackActive=false,gateTimers=[];
   function clearGateTimers(){gateTimers.forEach(clearTimeout);gateTimers=[]}
   function setGateStatus(main,sub){q('#gateStatus').textContent=main;q('#gateSubstatus').textContent=sub}
-  function makeGateVideo(){const video=document.createElement('video');video.id='introVideo';video.controls=true;video.playsInline=true;video.preload='metadata';video.setAttribute('aria-label','绿色融资调研AI访谈视频');video.setAttribute('width','1280');video.setAttribute('height','720');video.addEventListener('play',()=>{gateVideoPrompt.hidden=true;setGateStatus('调研影像播放中','可调节音量、进度或全屏观看')});video.addEventListener('ended',()=>setGateStatus('调研影像播放完成','可进入调研系统，或重新开启观看'));video.addEventListener('error',()=>{if((gatePlayer||video.dataset.cloudPrimary==='true')&&!gateFallbackActive){useLocalVideo('腾讯云视频暂时不可用')}else if(!gateFallbackActive){gatePlaceholder.hidden=false;q('b',gatePlaceholder).textContent='视频加载失败';q('small',gatePlaceholder).textContent='请检查备用视频文件是否完整';setGateStatus('调研影像未加载','仍可直接进入调研系统')}});return video}
-  function useLocalVideo(message='本地快启视频已就绪'){const src=(gateVideoHost?.dataset.src||'').trim();if(gateFallbackActive||!gateVideoHost||!src)return;gateFallbackActive=true;if(gatePlayer?.dispose)try{gatePlayer.dispose()}catch{}gatePlayer=null;if(gateVideo?.isConnected)gateVideo.remove();gateVideo=makeGateVideo();if(!gateVideoPrompt?.isConnected)gateVideoHost.append(gateVideoPrompt);gateVideoHost.insertBefore(gateVideo,gateVideoPrompt);gateVideo.src=src;gateVideo.load();setGateStatus(message,'腾讯云取流失败，已自动切换备用视频');gatePlaceholder.hidden=true;if(gateOpened){const attempt=gateVideo.play();if(attempt)attempt.catch(()=>{gateVideoPrompt.hidden=false;setGateStatus('备用视频已就绪','点击画面中央按钮播放声音')})}gateFallbackActive=false}
-  function ensureGateVideo(){const src=(gateVideoHost?.dataset.src||'').trim();if(!gateVideoHost)return null;if(gateVideo?.isConnected)return gateVideo;gateVideo=makeGateVideo();gateVideoPrompt=document.createElement('button');gateVideoPrompt.type='button';gateVideoPrompt.className='video-play-prompt';gateVideoPrompt.textContent='▶ 播放调研视频（含声音）';gateVideoPrompt.hidden=true;gateVideoPrompt.onclick=()=>{gateVideo.muted=false;gateVideo.play().then(()=>{gateVideoPrompt.hidden=true}).catch(()=>{setGateStatus('视频等待播放','请使用播放器控制栏开始播放')})};gateVideoHost.append(gateVideo,gateVideoPrompt);gatePlaceholder.hidden=true;const directSrc=(gateVideoHost.dataset.tencentDirectSrc||'').trim(),fileID=(gateVideoHost.dataset.tencentFileId||'').trim(),appID=(gateVideoHost.dataset.tencentAppId||'').trim(),psign=(gateVideoHost.dataset.tencentPsign||'').trim(),canUseTencent=location.protocol==='http:'||location.protocol==='https:';if(directSrc&&canUseTencent){gateVideo.dataset.cloudPrimary='true';gateVideo.src=directSrc;setGateStatus('腾讯云视频已就绪','将从腾讯云 CDN 直接加载')}else if(window.TCPlayer&&fileID&&appID&&psign&&canUseTencent){try{gatePlayer=window.TCPlayer('introVideo',{fileID,appID,psign,autoplay:false,preload:'metadata',language:'zh-CN',controls:true});gatePlayer.on?.('error',()=>useLocalVideo('腾讯云播放器暂时不可用'))}catch{useLocalVideo('腾讯云播放器初始化失败')}}else{gateVideo.src=src}return gateVideo}
-  function beginGate(){if(gateOpened)return;gateOpened=true;clearGateTimers();ensureGateVideo();if(gateVideo&&!gatePlayer)gateVideo.load();gate.classList.add('unlocking');setGateStatus('四类材料正在汇合',DATA.records.length+'条政策 · '+(DATA.provinces.length*DATA.years.length)+'个省年 · 176份问卷 · 38人次访谈 + 38人次录音');gateTimers.push(setTimeout(()=>{gate.classList.add('opening');setGateStatus('传导结构解锁','正在进入调研影像现场')},780));gateTimers.push(setTimeout(()=>{gate.classList.add('video-ready');if(!gateVideo)return;const attempt=gateVideo.play();if(attempt)attempt.catch(()=>{gateVideoPrompt.hidden=false;setGateStatus('调研影像已就绪','点击画面中央按钮播放声音')})},2050))}
-  function enterResearch(){clearGateTimers();if(gateVideo)gateVideo.pause();gate.classList.add('departing');document.body.classList.remove('gate-locked');setTimeout(()=>{gate.hidden=true;q('#research').scrollIntoView({block:'start'})},760)}
-  function replayIntro(){clearGateTimers();gateOpened=false;if(gateVideo){gateVideo.pause();gateVideo.currentTime=0}if(gateVideoPrompt)gateVideoPrompt.hidden=true;gate.classList.remove('unlocking','opening','video-ready');setGateStatus('传导系统待启动','四类研究材料与调研影像已就绪')}
+  function makeGateVideo(){const video=document.createElement('video');video.id='introVideo';video.controls=true;video.playsInline=true;video.preload='auto';video.setAttribute('aria-label','绿色融资调研AI访谈视频');video.setAttribute('width','1280');video.setAttribute('height','720');video.addEventListener('playing',()=>{document.body.classList.add('gate-video-playing');gatePlaceholder.hidden=true;gateVideoPrompt.hidden=true;setGateStatus('调研影像播放中',video.dataset.cloudPrimary==='true'?'腾讯云视频已提前缓冲，可调节音量、进度或全屏观看':'本地路演视频，不依赖现场网络')});video.addEventListener('waiting',()=>{document.body.classList.add('gate-video-playing');if(gateOpened)setGateStatus('调研影像缓冲中','网络较慢时可直接进入调研系统，视频不会阻塞后续演示')});video.addEventListener('pause',()=>document.body.classList.remove('gate-video-playing'));video.addEventListener('ended',()=>{document.body.classList.remove('gate-video-playing');setGateStatus('调研影像播放完成','可进入调研系统，或重新开启观看')});video.addEventListener('error',()=>{document.body.classList.remove('gate-video-playing');if((gatePlayer||video.dataset.cloudPrimary==='true')&&!gateFallbackActive){useLocalVideo('腾讯云视频暂时不可用')}else if(!gateFallbackActive){gatePlaceholder.hidden=false;q('b',gatePlaceholder).textContent='视频加载失败';q('small',gatePlaceholder).textContent='请检查备用视频文件是否完整';setGateStatus('调研影像未加载','仍可直接进入调研系统')}});return video}
+  function useLocalVideo(message='本地快启视频已就绪'){const src=(gateVideoHost?.dataset.src||'').trim();if(gateFallbackActive||!gateVideoHost||!src)return;gateFallbackActive=true;if(gatePlayer?.dispose)try{gatePlayer.dispose()}catch{}gatePlayer=null;if(gateVideo?.isConnected)gateVideo.remove();gateVideo=makeGateVideo();if(!gateVideoPrompt?.isConnected)gateVideoHost.append(gateVideoPrompt);gateVideoHost.insertBefore(gateVideo,gateVideoPrompt);gateVideo.src=src;gateVideo.load();if(gateOpened){setGateStatus(message,'腾讯云取流失败，已自动切换备用视频');gatePlaceholder.hidden=true;const attempt=gateVideo.play();if(attempt)attempt.catch(()=>{gateVideoPrompt.hidden=false;setGateStatus('备用视频已就绪','点击画面中央按钮播放声音')})}gateFallbackActive=false}
+  function ensureGateVideo(){const src=(gateVideoHost?.dataset.src||'').trim();if(!gateVideoHost)return null;if(gateVideo?.isConnected)return gateVideo;gateVideo=makeGateVideo();gateVideoPrompt=document.createElement('button');gateVideoPrompt.type='button';gateVideoPrompt.className='video-play-prompt';gateVideoPrompt.textContent='▶ 播放调研视频（含声音）';gateVideoPrompt.hidden=true;gateVideoPrompt.onclick=()=>{gateVideo.muted=false;gateVideo.play().then(()=>{gateVideoPrompt.hidden=true}).catch(()=>{setGateStatus('视频等待播放','请使用播放器控制栏开始播放')})};gateVideoHost.append(gateVideo,gateVideoPrompt);const directSrc=(gateVideoHost.dataset.tencentDirectSrc||'').trim(),isLocalRoadshow=['localhost','127.0.0.1','[::1]'].includes(location.hostname),canUseTencent=(location.protocol==='http:'||location.protocol==='https:')&&!isLocalRoadshow;if(directSrc&&canUseTencent){gateVideo.dataset.cloudPrimary='true';gateVideo.src=directSrc}else{gateVideo.dataset.localRoadshow='true';gateVideo.src=src}gateVideo.load();return gateVideo}
+  function beginGate(){if(gateOpened)return;gateOpened=true;clearGateTimers();ensureGateVideo();gate.classList.add('unlocking');setGateStatus('四类材料正在汇合',DATA.records.length+'条政策 · '+(DATA.provinces.length*DATA.years.length)+'个省年 · 176份问卷 · 38人次访谈 + 38人次录音');gateTimers.push(setTimeout(()=>{gate.classList.add('opening');setGateStatus('传导结构解锁','视频已在后台提前缓冲')},620));gateTimers.push(setTimeout(()=>{gate.classList.add('video-ready');gatePlaceholder.hidden=true;if(!gateVideo)return;const attempt=gateVideo.play();if(attempt)attempt.catch(()=>{gateVideoPrompt.hidden=false;setGateStatus('调研影像已就绪','点击画面中央按钮播放声音')})},1350))}
+  function enterResearch(){clearGateTimers();if(gateVideo)gateVideo.pause();document.body.classList.remove('gate-video-playing');gate.classList.add('departing');document.body.classList.remove('gate-locked');setTimeout(()=>{gate.hidden=true;q('#research').scrollIntoView({block:'start'})},760)}
+  function replayIntro(){clearGateTimers();gateOpened=false;if(gateVideo){gateVideo.pause();gateVideo.currentTime=0}document.body.classList.remove('gate-video-playing');if(gateVideoPrompt)gateVideoPrompt.hidden=true;gate.classList.remove('unlocking','opening','video-ready');setGateStatus('传导系统待启动','四类研究材料与调研影像已就绪')}
   q('#openGate').onclick=beginGate;q('#enterSite').onclick=enterResearch;q('#skipGate').onclick=enterResearch;q('#replayGate').onclick=replayIntro;
-  gate.addEventListener('pointermove',e=>{const r=gate.getBoundingClientRect(),nx=(e.clientX-r.left)/r.width-.5,ny=(e.clientY-r.top)/r.height-.5;gate.style.setProperty('--gate-x',(nx*3.2).toFixed(2)+'deg');gate.style.setProperty('--gate-y',(-ny*2.4).toFixed(2)+'deg')});gate.addEventListener('pointerleave',()=>{gate.style.setProperty('--gate-x','0deg');gate.style.setProperty('--gate-y','0deg')});
+  const primeGateVideo=()=>{if(document.visibilityState==='visible')ensureGateVideo()};
+  if('requestIdleCallback'in window)requestIdleCallback(primeGateVideo,{timeout:500});else setTimeout(primeGateVideo,80);
+  gate.addEventListener('pointermove',e=>{if(document.body.classList.contains('gate-video-playing'))return;const r=gate.getBoundingClientRect(),nx=(e.clientX-r.left)/r.width-.5,ny=(e.clientY-r.top)/r.height-.5;gate.style.setProperty('--gate-x',(nx*3.2).toFixed(2)+'deg');gate.style.setProperty('--gate-y',(-ny*2.4).toFixed(2)+'deg')});gate.addEventListener('pointerleave',()=>{gate.style.setProperty('--gate-x','0deg');gate.style.setProperty('--gate-y','0deg')});
   document.addEventListener('keydown',e=>{if(gate.hidden||gate.classList.contains('departing'))return;if((e.key==='Enter'||e.key===' ')&&!gateOpened){e.preventDefault();beginGate()}if(e.key==='Escape')enterResearch()});
   const researchData={
     policy:{name:'政策文本',count:'128 → 111 → 109',countLabel:'报告范围 → 编码记录 → 唯一标题',steps:[
@@ -884,5 +950,201 @@ researchData.policy.countLabel='131条记录，含2024—2026官方增量';
   });
   window.addEventListener('hashchange', revealHash);
   requestAnimationFrame(revealHash);
+
+  const presenterButton = document.createElement('button');
+  presenterButton.id = 'presenterModeBtn';
+  presenterButton.className = 'btn no-print presenter-btn';
+  presenterButton.type = 'button';
+  presenterButton.setAttribute('aria-pressed', 'true');
+  presenterButton.title = '翻页笔键控已开启（P键可切换）';
+  presenterButton.innerHTML = '<span aria-hidden="true">▣</span><span>翻页笔：开</span>';
+  const printButton = document.getElementById('printBtn');
+  const topBar = document.querySelector('.top-in');
+  if (topBar) topBar.insertBefore(presenterButton, printButton || null);
+
+  const presenterHud = document.createElement('div');
+  presenterHud.id = 'presenterHud';
+  presenterHud.className = 'presenter-hud no-print';
+  presenterHud.setAttribute('role', 'status');
+  presenterHud.setAttribute('aria-live', 'polite');
+  presenterHud.innerHTML = '<b>翻页笔键控已开启</b><span>下一页：→ / ↓ / PageDown / 空格　上一页：← / ↑ / PageUp　Enter：展开收起　F：全屏</span>';
+  document.body.appendChild(presenterHud);
+
+  let presenterEnabled = true;
+  let activeDrawerIndex = -1;
+  let hudTimer = 0;
+  const forwardKeys = new Set(['ArrowRight', 'ArrowDown', 'PageDown', ' ', 'Spacebar', 'BrowserForward', 'MediaTrackNext']);
+  const backwardKeys = new Set(['ArrowLeft', 'ArrowUp', 'PageUp', 'BrowserBack', 'MediaTrackPrevious']);
+  const forwardCodes = new Set(['ArrowRight', 'ArrowDown', 'PageDown', 'Space', 'Numpad3', 'Numpad6']);
+  const backwardCodes = new Set(['ArrowLeft', 'ArrowUp', 'PageUp', 'Numpad4', 'Numpad8', 'Numpad9']);
+  const editableTarget = (target) => target && (target.matches('input, textarea, select, [contenteditable="true"]') || target.closest('input, textarea, select, [contenteditable="true"]'));
+  const gateIsVisible = () => {
+    const gate = document.getElementById('gateIntro');
+    return gate && !gate.hidden && !gate.classList.contains('departing');
+  };
+  const showHud = (title, message) => {
+    presenterHud.querySelector('b').textContent = title;
+    presenterHud.querySelector('span').textContent = message;
+    presenterHud.classList.add('show');
+    clearTimeout(hudTimer);
+    hudTimer = window.setTimeout(() => presenterHud.classList.remove('show'), 4200);
+  };
+  const syncPresenterButton = () => {
+    presenterButton.setAttribute('aria-pressed', String(presenterEnabled));
+    presenterButton.querySelector('span:last-child').textContent = presenterEnabled ? '翻页笔：开' : '翻页笔：关';
+    presenterButton.title = presenterEnabled ? '翻页笔键控已开启（P键可切换）' : '翻页笔键控已关闭（P键可切换）';
+    document.body.classList.toggle('presenter-mode', presenterEnabled);
+  };
+  const setPresenterEnabled = (enabled) => {
+    presenterEnabled = enabled;
+    syncPresenterButton();
+    showHud(enabled ? '翻页笔键控已开启' : '翻页笔键控已关闭', enabled ? '方向键、PageUp/PageDown 和空格均可逐屏翻页；Enter 展开，F 全屏' : '按 P 或点击顶部按钮重新开启');
+  };
+  presenterButton.addEventListener('click', () => setPresenterEnabled(!presenterEnabled));
+  syncPresenterButton();
+
+  const detectActiveDrawer = () => {
+    if (activeDrawerIndex >= 0 && activeDrawerIndex < drawers.length) return activeDrawerIndex;
+    const anchor = window.scrollY + Math.min(window.innerHeight * 0.34, 280);
+    let best = 0;
+    drawers.forEach((drawer, index) => {
+      const section = drawer.closest('.module-shell-section');
+      if (section && section.offsetTop <= anchor) best = index;
+    });
+    return best;
+  };
+  const markActiveDrawer = (index) => {
+    activeDrawerIndex = Math.max(0, Math.min(drawers.length - 1, index));
+    drawers.forEach((drawer, drawerIndex) => drawer.classList.toggle('presenter-current', drawerIndex === activeDrawerIndex));
+    const config = modules[drawers[activeDrawerIndex].dataset.module];
+    if (config) showHud(config.index + ' · ' + config.label, config.title);
+    return drawers[activeDrawerIndex];
+  };
+  const openAndFocusDrawer = (index) => {
+    const drawer = markActiveDrawer(index);
+    if (!drawer.open) drawer.open = true;
+    requestAnimationFrame(() => {
+      const section = drawer.closest('.module-shell-section');
+      if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      drawer.querySelector('.module-summary')?.focus({ preventScroll: true });
+    });
+  };
+  const screenMetrics = (section) => {
+    const topBarHeight = document.querySelector('.top')?.getBoundingClientRect().height || 68;
+    const step = Math.max(window.innerHeight - topBarHeight - 72, 360);
+    const start = Math.max(0, section.offsetTop - topBarHeight - 12);
+    const end = Math.max(start, section.offsetTop + section.offsetHeight - window.innerHeight + 28);
+    const total = Math.max(1, Math.ceil((end - start) / step) + 1);
+    return { start, end, step, total };
+  };
+  const announceScreen = (title, target, metrics) => {
+    const current = Math.min(metrics.total, Math.max(1, Math.round((target - metrics.start) / metrics.step) + 1));
+    showHud(title + ' · 第 ' + current + '/' + metrics.total + ' 屏', current < metrics.total ? '继续按下一页查看本模块；到达末屏后自动进入下一模块' : '已到本模块末屏；再按下一页进入下一模块');
+  };
+  const advanceScreen = () => {
+    const index = detectActiveDrawer();
+    const drawer = markActiveDrawer(index);
+    if (!drawer.open) {
+      openAndFocusDrawer(index);
+      return;
+    }
+    const section = drawer.closest('.module-shell-section');
+    const metrics = screenMetrics(section);
+    if (window.scrollY < metrics.end - 24) {
+      const target = Math.min(metrics.end, Math.max(window.scrollY, metrics.start) + metrics.step);
+      window.scrollTo({ top: target, behavior: 'smooth' });
+      announceScreen('模块内容', target, metrics);
+      return;
+    }
+    if (index < drawers.length - 1) openAndFocusDrawer(index + 1);
+    else showHud('已经到达最后一页', '按上一页返回，或按 Home 回到第一个模块');
+  };
+  const retreatScreen = () => {
+    const index = detectActiveDrawer();
+    const drawer = markActiveDrawer(index);
+    const section = drawer.closest('.module-shell-section');
+    const metrics = screenMetrics(section);
+    if (window.scrollY > metrics.start + 24) {
+      const target = Math.max(metrics.start, window.scrollY - metrics.step);
+      window.scrollTo({ top: target, behavior: 'smooth' });
+      announceScreen('返回模块内容', target, metrics);
+      return;
+    }
+    if (index > 0) openAndFocusDrawer(index - 1);
+    else showHud('已经到达第一页', '按下一页开始演示');
+  };
+  const handleGateKey = (forward) => {
+    if (!gateIsVisible()) return false;
+    const gate = document.getElementById('gateIntro');
+    if (forward) {
+      if (!gate.classList.contains('unlocking')) {
+        document.getElementById('openGate')?.click();
+        showHud('开场动画已启动', '动画与视频出现后，再按下一页进入系统');
+      } else if (gate.classList.contains('video-ready')) {
+        document.getElementById('enterSite')?.click();
+        window.setTimeout(() => openAndFocusDrawer(0), 850);
+      }
+    } else {
+      document.getElementById('replayGate')?.click();
+      showHud('已返回开场', '按下一页重新启动');
+    }
+    return true;
+  };
+
+  drawers.forEach((drawer, index) => {
+    drawer.addEventListener('toggle', () => {
+      if (drawer.open) markActiveDrawer(index);
+    });
+    drawer.querySelector('.module-summary')?.addEventListener('focus', () => markActiveDrawer(index));
+  });
+
+  const consumeKey = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+  };
+  const isForwardKey = (event) => forwardKeys.has(event.key) || forwardCodes.has(event.code) || [32, 34, 39, 40].includes(event.keyCode);
+  const isBackwardKey = (event) => backwardKeys.has(event.key) || backwardCodes.has(event.code) || [33, 37, 38].includes(event.keyCode);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.altKey || event.ctrlKey || event.metaKey || editableTarget(event.target)) return;
+    if (event.key.toLowerCase() === 'p') {
+      consumeKey(event);
+      setPresenterEnabled(!presenterEnabled);
+      return;
+    }
+    if (event.key.toLowerCase() === 'f') {
+      consumeKey(event);
+      const control = gateIsVisible() ? document.getElementById('gateFullscreenBtn') : document.getElementById('fullscreenBtn');
+      control?.click();
+      return;
+    }
+    if (!presenterEnabled) return;
+    if (isForwardKey(event)) {
+      consumeKey(event);
+      if (!handleGateKey(true)) advanceScreen();
+      return;
+    }
+    if (isBackwardKey(event)) {
+      consumeKey(event);
+      if (!handleGateKey(false)) retreatScreen();
+      return;
+    }
+    if (event.key === 'Enter' && !gateIsVisible()) {
+      consumeKey(event);
+      const drawer = markActiveDrawer(detectActiveDrawer());
+      drawer.open = !drawer.open;
+      showHud(drawer.open ? '模块已展开' : '模块已收起', '按下一页继续，按 Enter 可再次切换');
+      return;
+    }
+    if (event.key === 'Home' && !gateIsVisible()) {
+      consumeKey(event);
+      openAndFocusDrawer(0);
+      return;
+    }
+    if (event.key === 'End' && !gateIsVisible()) {
+      consumeKey(event);
+      openAndFocusDrawer(drawers.length - 1);
+    }
+  }, true);
 })();
 </script></body></html>
